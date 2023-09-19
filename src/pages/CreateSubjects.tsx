@@ -54,19 +54,19 @@ const CreateSubjects = () => {
   ];
 
   return (
-    <div className="flex sm:block min-[320px]:block md:block lg:flex">
+    <div className="flex sm:block min-[600px]:block md:block lg:flex">
       <Sidebar />
-      <div className=" bg-gray-100 lg:w-3/5  p-4 sm:w-4/5">
+      <div className=" bg-gray-100 lg:w-3/5  p-4 sm:w-1/2">
         <div className="flex items-center justify-between mb-8">
           <h2 className="p-2 mx-2 font-semibold text-3xl">Create subject</h2>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap  items-center justify-between">
             <span className="bg-white p-2 rounded-full border border-blue-600">
               <img src={Notification} alt="Notification" />
             </span>
             <img src={account} width={"50px"} alt="account" className="ml-3" />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between sm:w-full sm:block">
           <Dropdown
             title="Class"
             options={[
@@ -82,6 +82,7 @@ const CreateSubjects = () => {
               "Add new class",
             ]}
             backgroundColor="#fff"
+            
           />
           <Dropdown
             title="Language"

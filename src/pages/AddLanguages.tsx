@@ -72,7 +72,7 @@ const CreateLanguage = () => {
   return (
     <div className="flex sm:block min-[320px]:block md:block lg:flex">
       <Sidebar />
-      <div className=" bg-gray-100 w-3/5 p-4">
+      <div className=" bg-gray-100 sm:w-1/2 md:w-8/12 min-[320px]:w-8/12 lg:w-3/5 p-4">
         <div className="flex items-center justify-between mb-8">
           <h2 className="p-2 mx-2 font-semibold text-3xl">Add Language</h2>
           <div className="flex items-center justify-between">
@@ -82,7 +82,7 @@ const CreateLanguage = () => {
             <img src={account} width={"50px"} alt="account" className="ml-3" />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between sm:w-full sm:flex-wrap sm:gap-y-2">
           <Dropdown
             title="Class"
             options={[
@@ -99,7 +99,7 @@ const CreateLanguage = () => {
             ]}
             backgroundColor="#fff"
           />
-          <div className="flex sm:block md:block lg:flex items-center bg-white rounded-lg mr-4">
+          <div className="flex lg:flex items-center bg-white rounded-lg mr-4">
             <BsSearch className="ml-4" />
             <input
               type="search"
