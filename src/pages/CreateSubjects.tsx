@@ -108,7 +108,7 @@ const CreateSubjects = () => {
         </div>
         
         {/* Post Button */}
-        <button className="w-full sm:w-[40%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
+        <button className="w-full sm:w-[40%] lg:ml-[30%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
           Post
         </button>
       </div>

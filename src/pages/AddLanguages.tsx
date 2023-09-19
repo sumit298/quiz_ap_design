@@ -116,7 +116,7 @@ const CreateLanguage = () => {
       </div>
       
       {/* Subject Dropdowns */}
-      <div className="space-y-4 bg-white">
+      <div className="space-y-4 bg-white p-6 rounded-lg">
         {menuItems.map((menuItem: any, index: number) => (
           <SubjectDropDown
             key={index}
@@ -153,7 +153,7 @@ const CreateLanguage = () => {
       </div>
 
       {/* Post Button */}
-      <button className="w-full sm:w-[40%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
+      <button className="w-full sm:w-[40%] lg:ml-[30%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
         Post
       </button>
     </div>
@@ -171,7 +171,7 @@ const CreateLanguage = () => {
             options={["English", "Hindi", "Urdu", "Add new"]}
             gap=""
           />
-          <button className="w-full sm:w-[30%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-2">
+          <button className="w-full sm:w-[30%]  mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-2">
             Add
           </button>
         </div>
