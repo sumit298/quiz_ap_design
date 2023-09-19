@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="w-[15rem]">
+    <div className="w-full md:w-[15rem]">
       {/* Content for div1 */}
       <div className="p-4 my-4">
         <Link to="/">
@@ -38,11 +38,11 @@ const Sidebar = () => {
             </button>
           </Link>
           <Link to="/language">
-          <button className="flex items-center hover:bg-purple hover:text-white p-2 rounded-lg w-full">
-            {" "}
-            <img src={author} width={"25px"} alt="exam" />{" "}
-            <span className="font-semibold text-sm mx-1">Add Language</span>
-          </button>
+            <button className="flex items-center hover:bg-purple hover:text-white p-2 rounded-lg w-full">
+              {" "}
+              <img src={author} width={"25px"} alt="exam" />{" "}
+              <span className="font-semibold text-sm mx-1">Add Language</span>
+            </button>
           </Link>
         </div>
       </div>

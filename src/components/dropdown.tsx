@@ -21,11 +21,11 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
   };
 
   return (
-    <div className="relative inline-block px-4">
+    <div className="relative inline-block">
       {/* Custom dropdown button */}
       <button
         onClick={toggleDropdown}
-        className={`flex w-full sm:w-full  justify-between ${gap} items-center   rounded-lg bg-gray-100 px-4 py-2 focus:outline-none`}
+        className={`flex w-full justify-between ${gap} items-center rounded-lg bg-gray-100 px-4 py-2 focus:outline-none`}
         style={{ backgroundColor: backgroundColor }}
       >
         <span className="font-semibold text-lg">{title}</span>
@@ -37,7 +37,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
       </button>
       {/* Dropdown content */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 opacity-1 w-60 border z-50 bg-white   rounded-lg shadow-lg">
+        <div className="absolute right-0 mt-2 w-full sm:w-60 opacity-1 border z-50 bg-white rounded-lg shadow-lg">
           <ul>
             {options.map((option, index) => (
               <li

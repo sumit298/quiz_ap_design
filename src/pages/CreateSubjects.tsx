@@ -54,19 +54,23 @@ const CreateSubjects = () => {
   ];
 
   return (
-    <div className="flex sm:block min-[600px]:block md:block lg:flex">
+    <div className="flex flex-col sm:flex-row">
+      {/* Sidebar */}
       <Sidebar />
-      <div className=" bg-gray-100 lg:w-3/5  p-4 sm:w-1/2">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="p-2 mx-2 font-semibold text-3xl">Create subject</h2>
-          <div className="flex flex-wrap  items-center justify-between">
+
+      <div className="flex-1 bg-gray-100 lg:w-3/5 p-4 sm:w-4/5">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="p-2 ml-2 font-semibold text-xl sm:text-3xl">Create subject</h2>
+          <div className="flex items-center justify-between">
             <span className="bg-white p-2 rounded-full border border-blue-600">
               <img src={Notification} alt="Notification" />
             </span>
-            <img src={account} width={"50px"} alt="account" className="ml-3" />
+            <img src={account} width={"40px"} alt="account" className="ml-3" />
           </div>
         </div>
-        <div className="flex justify-between sm:w-full sm:block">
+        
+        {/* Class and Language Dropdowns */}
+        <div className="mb-4 space-y-4">
           <Dropdown
             title="Class"
             options={[
@@ -82,7 +86,6 @@ const CreateSubjects = () => {
               "Add new class",
             ]}
             backgroundColor="#fff"
-            
           />
           <Dropdown
             title="Language"
@@ -90,6 +93,8 @@ const CreateSubjects = () => {
             backgroundColor="#fff"
           />
         </div>
+        
+        {/* Subject Dropdowns */}
         <div className="p-4 bg-white mx-4 mt-4 rounded-lg">
           <h2 className="text-xl font-bold p-4 opacity-75">Subject</h2>
           {menuItems.map((menuItem: any, index: number) => (
@@ -101,15 +106,19 @@ const CreateSubjects = () => {
             />
           ))}
         </div>
-        <button className="w-[40%] mx-[25%] mt-4 text-xl bg-purple font-semibold text-white rounded-lg p-3">
+        
+        {/* Post Button */}
+        <button className="w-full sm:w-[40%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
           Post
         </button>
       </div>
-      <div className=" w-[25rem]">
+
+      {/* Right Sidebar */}
+      <div className="w-full sm:w-[25rem]">
         <h2 className="p-4 text-2xl font-semibold mt-4">
           Create subject/topic/subtopic
         </h2>
-        <div>
+        <div className="space-y-4">
           <div className="flex flex-col mb-4">
             <label className="font-bold px-4" htmlFor="subject">
               Subject
@@ -139,7 +148,7 @@ const CreateSubjects = () => {
               options={["Psychology basics", "Psychology disorders"]}
               gap=""
             />
-            <button className="w-[30%] mx-[35%] mt-4 text-xl bg-purple font-semibold text-white rounded-lg p-2">
+            <button className="w-full sm:w-[30%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-2">
               Add
             </button>
           </div>
