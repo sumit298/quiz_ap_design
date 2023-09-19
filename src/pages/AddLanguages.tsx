@@ -86,7 +86,7 @@ const CreateLanguage = () => {
       </div>
       
       {/* Search and Dropdown */}
-      <div className="mb-4">
+      <div className="mb-4 flex items-center justify-between">
         <Dropdown
           title="Class"
           options={[
@@ -116,7 +116,7 @@ const CreateLanguage = () => {
       </div>
       
       {/* Subject Dropdowns */}
-      <div className="space-y-4">
+      <div className="space-y-4 bg-white">
         {menuItems.map((menuItem: any, index: number) => (
           <SubjectDropDown
             key={index}
@@ -162,8 +162,8 @@ const CreateLanguage = () => {
     <div className="w-full sm:w-[25rem]">
       <h2 className="p-4 text-xl font-semibold mt-4">Add Language</h2>
       <div className="mt-4 space-y-4">
-        <div className="flex flex-col">
-          <label className="font-bold px-4" htmlFor="subject">
+        <div className="flex flex-col w-[95%] m-auto">
+          <label className="font-bold" htmlFor="subject">
             Language
           </label>
           <Dropdown

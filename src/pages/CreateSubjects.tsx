@@ -70,7 +70,7 @@ const CreateSubjects = () => {
         </div>
         
         {/* Class and Language Dropdowns */}
-        <div className="mb-4 space-y-4">
+        <div className="mb-4 lg:flex lg:justify-between mx-4 sm:gap-y-4">
           <Dropdown
             title="Class"
             options={[
@@ -118,9 +118,9 @@ const CreateSubjects = () => {
         <h2 className="p-4 text-2xl font-semibold mt-4">
           Create subject/topic/subtopic
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-4 w-[95%] m-auto">
           <div className="flex flex-col mb-4">
-            <label className="font-bold px-4" htmlFor="subject">
+            <label className="font-bold" htmlFor="subject">
               Subject
             </label>
             <Dropdown
@@ -130,7 +130,7 @@ const CreateSubjects = () => {
             />
           </div>
           <div className="flex flex-col mb-4">
-            <label className="font-bold px-4" htmlFor="subject">
+            <label className="font-bold" htmlFor="subject">
               Topic
             </label>
             <Dropdown
@@ -140,7 +140,7 @@ const CreateSubjects = () => {
             />
           </div>
           <div className="flex flex-col mb-3">
-            <label className="font-bold px-4" htmlFor="subject">
+            <label className="font-bold" htmlFor="subject">
               Subtopic
             </label>
             <Dropdown

@@ -24,7 +24,7 @@ const MainPage = () => {
         </div>
         
         {/* Language and Menu Dropdowns */}
-        <div className="mb-4 space-y-4">
+        <div className="mb-4  flex justify-between mx-4">
           <Dropdown
             title="Language"
             options={["English", "Hindi", "Urdu", "Add new"]}
@@ -43,7 +43,7 @@ const MainPage = () => {
         <Questions />
 
         {/* Post Button */}
-        <button className="w-full sm:w-[40%] mx-auto mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
+        <button className="w-full  sm:w-[40%] m-auto lg:ml-[30%]  mt-4 text-lg bg-purple font-semibold text-white rounded-lg p-3">
           Post
         </button>
       </div>
